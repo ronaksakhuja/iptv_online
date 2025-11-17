@@ -1,0 +1,82 @@
+.app {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #1a1a1a;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.no-selection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.no-selection h2 {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.no-selection p {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  color: #999;
+}
+
+.user-info {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.user-info p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #e0e0e0;
+  text-align: left;
+}
+
+.user-info strong {
+  color: #0066cc;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.error-overlay {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff444420;
+  border: 1px solid #ff4444;
+  border-radius: 6px;
+  padding: 12px 24px;
+  color: #ff6666;
+  font-size: 14px;
+  z-index: 1000;
+}

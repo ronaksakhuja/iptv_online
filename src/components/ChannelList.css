@@ -1,0 +1,146 @@
+.channel-list {
+  width: 320px;
+  background: #2a2a2a;
+  border-right: 1px solid #404040;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.channel-list-header {
+  padding: 16px;
+  border-bottom: 1px solid #404040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.channel-list-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.btn-logout {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: #e0e0e0;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-logout:hover {
+  background: #555;
+}
+
+.channel-list-controls {
+  padding: 16px;
+  border-bottom: 1px solid #404040;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.category-select {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.channel-list-items {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.channel-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.channel-item:hover {
+  background: #333;
+}
+
+.channel-item.active {
+  background: #0066cc;
+}
+
+.channel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #444;
+}
+
+.channel-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.channel-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.channel-number {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.no-channels {
+  padding: 32px 16px;
+  text-align: center;
+  color: #999;
+}
+
+.channel-list-items::-webkit-scrollbar {
+  width: 8px;
+}
+
+.channel-list-items::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.channel-list-items::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.channel-list-items::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
